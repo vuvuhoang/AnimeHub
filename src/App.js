@@ -14,6 +14,12 @@ function App() {
     setTopAnime(temp.top.slice(0, 10));
   }
 
+  async function GetTopShow() {
+    const temp = await fetch(`https://api.jikan.moe/v3/top/anime/1/favorite`)
+      .then(res => res.json());
+    SetAnimeList(temp.top.slice(0, 12));
+  }
+
   const HandleSearch = e =>{
     e.preventDefault();
     FetchAnime(search)
@@ -22,6 +28,7 @@ function App() {
   console.log(search)
   useEffect(() => {
     GetTopAnime();
+    GetTopShow();
   }, []);
 
     async function FetchAnime(query){
