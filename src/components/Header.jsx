@@ -49,7 +49,7 @@ export default function Nav(props) {
                             </a>
                         </li>
                         <li className="menu__list">
-                            <a href="/books" className="menu__link" onClick={closeMenu}>
+                            <a href="/" className="menu__link" onClick={closeMenu}>
                                 Anime Lists
                             </a>
                         </li>
