@@ -25,7 +25,7 @@ function App() {
     FetchAnime(search)
  
   }
-  console.log(search)
+
   useEffect(() => {
     GetTopAnime();
     GetTopShow();

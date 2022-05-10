@@ -27,4 +27,14 @@ img {
 }
 .container{
   display: flex;
+  justify-content: space-between;
+}
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+  .content__wrap{
+    display: none;
+  }
+  .container{
+    display: flow-root;
+  }
 }
